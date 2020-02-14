@@ -72,10 +72,13 @@ LVAR_IMAGE_VER="latest"
 
 cd build-ctx || exit 1
 
+LVAR_SRC_OS_IMAGE="tsle/os-debian-${LVAR_DEBIAN_RELEASE}-${LVAR_DEBIAN_DIST}:${LVAR_DEBIAN_VERSION}"
+docker pull $LVAR_SRC_OS_IMAGE || exit 1
+echo
+
 docker build \
+		--build-arg CF_SRC_OS_IMAGE="$LVAR_SRC_OS_IMAGE" \
 		--build-arg CF_CPUARCH_DEB_DIST="$LVAR_DEBIAN_DIST" \
-		--build-arg CF_DEBIAN_RELEASE="$LVAR_DEBIAN_RELEASE" \
-		--build-arg CF_DEBIAN_VERSION="$LVAR_DEBIAN_VERSION" \
 		--build-arg CF_MAILHOG_VERSION="$LVAR_MAILHOG_VERSION" \
 		-t "$LVAR_IMAGE_NAME":"$LVAR_IMAGE_VER" \
 		.
