@@ -61,7 +61,7 @@ _getCpuArch debian_dist >/dev/null || exit 1
 
 LVAR_DEBIAN_DIST="$(_getCpuArch debian_dist)"
 LVAR_DEBIAN_RELEASE="buster"
-LVAR_DEBIAN_VERSION="10.02"
+LVAR_DEBIAN_VERSION="10.5"
 
 LVAR_MAILHOG_VERSION="head"
 
