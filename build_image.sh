@@ -66,7 +66,7 @@ LVAR_DEBIAN_VERSION="10.5"
 LVAR_MAILHOG_VERSION="head"
 
 LVAR_IMAGE_NAME="mail-mailhog-${LVAR_DEBIAN_DIST}"
-LVAR_IMAGE_VER="latest"
+LVAR_IMAGE_VER="1.0"
 
 # ----------------------------------------------------------
 
