@@ -11,7 +11,7 @@ See the related GitHub repository [https://github.com/tsitle/dockercontainer-mai
 
 ## Source of Mailhog binary packages
 The binary packages were built using 
-[https://github.com/tsitle/dockercontainer-app-go\_native\_compiler](https://github.com/tsitle/dockercontainer-app-go_native_compiler)  
+[https://github.com/tsitle/dockercontainer-app-go_native_compiler](https://github.com/tsitle/dockercontainer-app-go_native_compiler)  
 and the build script `build-mailhog.sh` that the repository contains.
 
 ## Configuration
